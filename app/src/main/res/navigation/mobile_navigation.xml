@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_start">
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.missclick.gameninja.ui.firstScreen.FirstScreenFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_first_screen" />
+
+    <fragment
+        android:id="@+id/nav_game_screen"
+        android:name="com.missclick.gameninja.ui.gameScreen.GameScreenFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_game_screen" />
+
+    <fragment
+        android:id="@+id/nav_result_screen"
+        android:name="com.missclick.gameninja.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_result_screen" />
+</navigation>
