@@ -16,7 +16,7 @@
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -24,9 +24,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos1_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos1_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -34,9 +35,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos2_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos1_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -46,7 +48,7 @@
         android:layout_weight="1"
         app:layout_constraintLeft_toLeftOf="@+id/pos1_btn"
         app:layout_constraintTop_toBottomOf="@+id/pos1_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -54,9 +56,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos4_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos4_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -64,9 +67,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos5_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos4_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -76,7 +80,7 @@
         android:layout_weight="1"
         app:layout_constraintLeft_toLeftOf="@+id/pos1_btn"
         app:layout_constraintTop_toBottomOf="@+id/pos4_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -84,9 +88,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos7_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos7_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -94,9 +99,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos8_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos7_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -106,7 +112,7 @@
         android:layout_weight="1"
         app:layout_constraintLeft_toLeftOf="@+id/pos1_btn"
         app:layout_constraintTop_toBottomOf="@+id/pos7_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -114,9 +120,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos10_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos10_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -124,9 +131,10 @@
         android:layout_width="113dp"
         android:layout_height="123dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         app:layout_constraintLeft_toRightOf="@+id/pos11_btn"
         app:layout_constraintBottom_toBottomOf="@+id/pos10_btn"
-        app:srcCompat="@drawable/crupa"
+        app:srcCompat="@drawable/back"
         />
 
 
