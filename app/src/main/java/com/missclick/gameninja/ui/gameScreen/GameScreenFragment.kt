@@ -13,6 +13,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.missclick.gameninja.R
+import com.missclick.gameninja.data.models.EndModel
+import com.missclick.gameninja.ui.resultScreen.ResultScreenFragment
 import java.util.concurrent.TimeUnit
 
 
@@ -71,7 +73,7 @@ class GameScreenFragment : Fragment() {
         var isOpened = -1
         var fails = 0
         var pairs = 6
-        for (i in 0..11){
+        for (i in 0..10){
             positionsImage[i].setOnClickListener {
                 if (isOpened == -1 || isOpened == i){
                     isOpened = i
@@ -93,7 +95,7 @@ class GameScreenFragment : Fragment() {
                                     positionsImage[isOpened].visibility = View.INVISIBLE
                                     isOpened = -1
                                     pairs -= 1
-                                    if (pairs == 0) findNavController().navigate(R.id.nav_result_screen)
+                                    if (pairs == 0) findNavController().navigate(R.id.nav_result_screen, ResultScreenFragment.newInstance(end = EndModel(fails = fails)))
                                 }
                             },
                             1000 // value in milliseconds
@@ -102,6 +104,37 @@ class GameScreenFragment : Fragment() {
                 }
             }
         }
+        val i = 11
+        positionsImage[i].setOnClickListener {
+            if (isOpened == -1 || isOpened == i){
+                isOpened = i
+                positionsImage[i].setImageResource(getResource(number = positions[i]))
+            }
+            else{
+                positionsImage[i].setImageResource(getResource(number = positions[i]))
+                Handler().postDelayed(
+                    {
+                        if (positions[isOpened] != positions[i]){
+                            fails += 1
+                            Log.e(isOpened.toString(),i.toString())
+                            positionsImage[i].setImageResource(getResource(number = 0))
+                            positionsImage[isOpened].setImageResource(getResource(number = 0))
+                            isOpened = -1
+                        }
+                        else{
+                            positionsImage[i].visibility = View.INVISIBLE
+                            positionsImage[isOpened].visibility = View.INVISIBLE
+                            isOpened = -1
+                            pairs -= 1
+                            if (pairs == 0) findNavController().navigate(R.id.nav_result_screen, ResultScreenFragment.newInstance(end = EndModel(fails = fails)))
+                        }
+                    },
+                    1000 // value in milliseconds
+                )
+
+            }
+        }
+
     }
 
     private fun getResource(number : Int): Int {

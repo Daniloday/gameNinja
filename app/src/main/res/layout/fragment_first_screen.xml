@@ -31,4 +31,16 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/start_btn"
         app:layout_constraintTop_toBottomOf="@+id/start_btn" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recordsBtn"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="700dp"
+        android:background="@null"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

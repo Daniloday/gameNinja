@@ -19,7 +19,13 @@
 
     <fragment
         android:id="@+id/nav_result_screen"
-        android:name="com.missclick.gameninja.ui.slideshow.SlideshowFragment"
+        android:name="com.missclick.gameninja.ui.resultScreen.ResultScreenFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_result_screen" />
+
+    <fragment
+        android:id="@+id/nav_record_screen"
+        android:name="com.missclick.gameninja.ui.recordsScreen.RecordsScreenFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/records_screen_fragment" />
 </navigation>

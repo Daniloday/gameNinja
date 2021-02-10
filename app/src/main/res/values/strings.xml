@@ -12,4 +12,9 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="btn_start">Старт</string>
     <string name="btn_exit">Выход</string>
+    <string name="text_win">Победа!</string>
+    <string name="text_fails">Количество ошибок:</string>
+    <string name="btn_restart">Еще раз!</string>
+
+
 </resources>
